@@ -1,16 +1,12 @@
-// Copy over the variables from the previous activity
-// Create a variable called 'name' that holds your name in a string
-let name = 'Travis Taylor';
 
-// Create another variable called 'title' using a string template to say "<your name>'s First Plotly Chart"
-let title = `${name}'s First Plotly Chart!`;
+let title = "Group 3 Project 3";
 
 // Load data from the "salary_data.csv" file
-d3.csv('https://eacromwell.github.io/data/Salary_Data.csv')
+d3.csv('data/salary_data.csv')
   .then(data => {
     // Extract data from the CSV-like object
     let x = data.map(d => d.job_title);
-    let y = data.map(d => +d.salary);
+    let y = data.map(d => d.salary);
 
     // Assign `x` and `y` values for the Plotly trace object
     let trace1 = {
