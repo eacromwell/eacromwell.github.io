@@ -6,7 +6,7 @@ let name = 'Travis Taylor';
 let title = `${name}'s First Plotly Chart!`;
 
 // Load data from the "salary_data.csv" file
-d3.csv('data/salary_data.csv')
+d3.csv('https://eacromwell.github.io/data/Salary_Data.csv')
   .then(data => {
     // Extract data from the CSV-like object
     let x = data.map(d => d.job_title);
