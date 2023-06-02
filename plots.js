@@ -6,7 +6,7 @@ d3.csv('data/salary_data.csv')
   .then(data => {
     // Extract data from the CSV-like object
     let x = data.map(d => d.job_title);
-    let y = data.map(d => d.salary);
+    let y = data.map(d => +d.salary);
 
     // Assign `x` and `y` values for the Plotly trace object
     let trace1 = {
