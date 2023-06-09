@@ -72,6 +72,12 @@ async function updatePlot2(selectedDataset2) {
         dtick: "M60",
         range: [22, 60],
         tickangle: -45, // Set the x-axis tick labels tilt to 45 degrees
+        tickfont: {
+          family: 'Arial Black, sans-serif',
+          size: 12,
+          color: 'black',
+          weight: 'bold'
+        }
       },
       margin: {
         b: 200, // Increase the bottom margin to create more space for tick labels
