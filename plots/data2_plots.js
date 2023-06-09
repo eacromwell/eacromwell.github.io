@@ -59,8 +59,12 @@ async function updatePlot2(selectedDataset2) {
       height: 600,
       width: 1100,
       showlegend: true,
-      legend: {"orientation": "t"},
-      title: "Matched Salaries by Job Title",
+      legend: {
+        x: 0.40,
+        y: 1.05,
+        orientation: 'h'
+      },
+      title: "<span style='font-size: 20px'><b>Salaries by Age (Male and Female)</b></span><br><span style='font-size: 12px'>Click the boxes below to toggle Male or Female - Hover data for more info</span>",
       yaxis: {
         tickformat: "$", // Set tickformat to "$" for dollar sign
       },

@@ -51,7 +51,7 @@ async function updatePlot1(selectedDataset1) {
       width: 1100,
       showlegend: true,
       legend: {
-        x: 0.435,
+        x: 0.35,
         y: 1.05,
         orientation: 'h'
       },
