@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How Does Gender, Age, and Education Level Affect Salary?</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href=".\css\normalize.css" />
+	<link rel="stylesheet" href=".\css\index.css" />
+	<link rel="stylesheet" href=".\dist\gifplayer.css" />
+  <style>
+    /* Custom CSS styles go here */
+    body {
+      background-color: #9db1bb; /* Adjust the color code as needed */
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chart-container {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-left: 0px; /* Adjust the value as needed */
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+  <div class="center-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h1>How Does Gender, Age, and Education Level Affect Salary?</h1>
+          <p>Click the GIF to view a demonstration of how to explore and navitage the visualizations below. Click to pause.</p>
+          <section>
+            <img class="gifplayer" src="media/banana.png"
+              data-mode="video"
+              data-webm="media/banana.webm"
+              data-mp4="media/banana.mp4" />
+          </section>
+        </div>
+      </div>
+
+      <div id="selector1">
+        <label for="datasetSelector1">Select Dataset:</label>
+        <select id="datasetSelector1">
+          <option value="data1a">Matched Salaries by Job Title</option>
+          <option value="data1b">Matched Salaries by Job Title - Lowest to Highest Male</option>
+          <option value="data1c">Matched Salaries by Job Title - Lowest to Highest Female</option>
+        </select>
+      </div>
+      <div class="well">
+        <div id="plot1" class="chart-container"></div>
+      </div>
+
+      <div id="selector2">
+        <label for="datasetSelector2">Select Dataset:</label>
+        <select id="datasetSelector2">
+          <option value="data2a">Matched Salaries by Age</option>
+          <option value="data2b">Unmatched Salaries by Age</option>
+        </select>
+      </div>
+      <div class="well">
+        <div id="plot2" class="chart-container"></div>
+      </div>
+      
+      <div id="selector3">
+        <label for="datasetSelector2">Select Dataset:</label>
+        <select id="datasetSelector2">
+          <option value="data2a">Matched Salaries by Age</option>
+          <option value="data2b">Unmatched Salaries by Age</option>
+        </select>
+      </div>
+      <div class="well">
+        <div id="plot3" class="chart-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src=".\data\data1_salary_by_title_matched.js"></script>
+  <script src=".\data\data2_salary_by_age_matched.js"></script>
+  <script src=".\data\data3_salary_by_age.js"></script>
+  <script src=".\plots\data_plots.js"></script>
+  <script src=".\dist\jquery.gifplayer.js"></script>
+  <script>
+    $(document).ready( function(){
+      $('.gifplayer').gifplayer();
+    });
+  </script>
+</body>
+</html>
