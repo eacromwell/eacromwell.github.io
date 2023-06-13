@@ -1,0 +1,1 @@
+let data4 = [{"Education":"High School","Female":39216,"Male":44100,"Overall":41756},{"Education":"Bachelor's","Female":88348,"Male":99851,"Overall":95057},{"Education":"Master's","Female":123273,"Male":134088,"Overall":128237},{"Education":"PhD","Female":160330,"Male":161486,"Overall":161080}];

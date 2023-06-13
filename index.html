@@ -35,7 +35,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 jumbotron text-center">
-          <h1>How Does Gender, Age, and Education Level Affect Salary?</h1>
+          <h1>Career Analysis Dashboard</h1>
+          <h2><b>Group 3 - Project 3</b></h2>
+          <h2><b>Exploring the relationship between Salary Gender, Age, Education Level, Experience and Role</b></h2>
+          <h3>For our project, we wanted to study factors that can affect a salary. This information is relevant to those in the Data Analytics Bootcamp because most of us will apply for new jobs once the boot camp ends. Knowing which job titles offer better pay will be helpful during the job search. We also can use our insights to negotiate a higher salary during the hiring process.</h3>
+            <p><h3>We have all heard of the gender wage gap and were interested in seeing how true that is for this data set. We also assumed that salary would increase as age, education level, and years of experience increase, but we wanted to ensure that these assumptions were correct. </h3></p>
+            <p><h3><b>Note: In the sourced dataset, sample responses for "Gender" were limited to "Male" or "Female". As gender selection options expand in the workforce, our hope is that the relevant data becomes more widely available.</b></h3></p>
           <p>Click the GIF to view a demonstration of how to explore and navitage the visualizations below. Click to pause.</p>
           <section>
             <img class="gifplayer" src=".\media\preview.PNG"
@@ -55,35 +60,90 @@
       </div>
       <div class="well">
         <div id="plot1" class="chart-container"></div>
+      <div class="row" style="padding: 0 25px;">
+        <h2 style="text-align: center;">Analysis</h2>
+          <h3>When looking at lowest to highest salaries, no matter the gender, jobs with the word “junior” or “associate” in the title tend to have lower salaries, jobs with the word “senior” or “manager” have salaries in the middle, and jobs with the word “director” have the highest salaries.
+            <p>For both genders, the highest salary was for “Director of Data Science,” which is good news for us, as we are entering the field of data analytics.</p></h3>
+        </div>
       </div>
-
       <div id="selector2">
         <label for="datasetSelector2">Select Dataset:</label>
         <select id="datasetSelector2">
-          <option value="data2a">Matched Salaries by Age</option>
-          <option value="data2b">Unmatched Salaries by Age</option>
+          <option value="data2a">Salaries by Age - Line Graph</option>
+          <option value="data2b">Salaries by Age - Scatter Plot</option>
         </select>
       </div>
       <div class="well">
         <div id="plot2" class="chart-container"></div>
+      <div class="row" style="padding: 0 25px;">
+        <h2 style="text-align: center;">Analysis</h2>
+          <h3>When comparing salaries to age, it is clear that salary tends to increase as age increases. <p>This correlation is unsurprising because with age comes more experience and promotion opportunities.</p> <p>In addition, salaries can increase from less than <b>$40k at age 22</b> to more than <b>$180k at age 60</b> - a whopping <b>$140k increase</b> throughout a career.</p></h3>
+      </div>      
+    </div>
+      <div id="selector4">
+        <label for="datasetSelector4">Select Dataset:</label>
+        <select id="datasetSelector4">
+          <option value="data4a">Salaries by Experience - Bar Chart</option>
+          <option value="data4b">Salaries by Experience - Scatter Chart</option>
+        </select>
+      </div>
+      <div class="well">
+        <div id="plot4" class="chart-container"></div>
+        <div class="row" style="padding: 0 25px;">
+          <h2 style="text-align: center;">Analysis</h2>
+            <h3>As expected, salary tends to increase as years of experience increases. <p>However, one interesting insight is that after <b>20 years</b> of experience, salaries appear to plateau and stay approximately the same until <b>35 years</b> of experience.</p></h3>
+        </div>      
       </div>
       
       <div id="selector3">
-        <label for="datasetSelector2">Select Dataset:</label>
-        <select id="datasetSelector2">
-          <option value="data2a">Matched Salaries by Age</option>
-          <option value="data2b">Unmatched Salaries by Age</option>
+        <label for="datasetSelector3">Select Dataset:</label>
+        <select id="datasetSelector3">
+          <option value="data3a">Salaries by Education - Bar Chart</option>
+          <option value="data3b">Salaries by Education (High School Only) - Scatter Chart</option>
+          <option value="data3c">Salaries by Education (Bachelor's Only) - Scatter Chart</option>
+          <option value="data3d">Salaries by Education (Master's Only) - Scatter Chart</option>
+          <option value="data3e">Salaries by Education (PhD's Only) - Scatter Chart</option>
         </select>
       </div>
       <div class="well">
         <div id="plot3" class="chart-container"></div>
+        <div class="row" style="padding: 0 25px;">
+          <h2 style="text-align: center;">Analysis</h2>
+            <h3>Our research shows a strong positive correlation between <b>education</b> and <b>salary</b>. <p>Interestingly, the wage gap for women decreases as they earn higher education degrees.</p> <p>It is important to note that the correlation between education levels and salary can vary across industries, job sectors, and geographic locations. Other factors such as experience, job performance, demand for specific skills, and market conditions also influence salary levels.</p></h3>
+        </div>      
+      </div>
+      
+      <div id="selector5">
+        <label for="datasetSelector5">Select Dataset:</label>
+        <select id="datasetSelector5">
+          <option value="data5b">Salary Increase Percentage (Junior to Senior) - Male, Female and Overall </option>
+          <option value="data5a">Salary Increase Amount (Junior to Senior) - Male, Female and Overall</option>
+        </select>
+      </div>
+      <div class="well">
+        <div id="plot5" class="chart-container"></div>
+        <div class="row" style="padding: 0 25px;">
+          <h2 style="text-align: center;">Analysis</h2>
+            <h3>For roles where there were correlated "Junior" and "Senior" positions, <b>Software Engineer</b> saw the greatest increase percentage for both Women and Men at <b>210% and 215%</b> increase respectively.
+              <p>Women working in the role of <b>Project Manager</b> saw a substantial increase from Junior to Senior relative to their male counterparts at <b>208%</b>. Additionally, for Women, 4 of 7 roles sampled saw significantly greater increase in percentage relative to the Junior role.</p>
+              <p> When analyzing Salary Increase Amount, there was greater disparity between genders. For example, Female <b>Marketing Coordinators</b> received a <b>$55,000</b> increase vs <b>$30,000</b> for their male counterparts. For <b>Software Engineers</b>, Men received an average of an <b>$110,000</b> increase vs <b>$98,0000</b> for Women.</p></h3>
+        </div>      
       </div>
     </div>
   </div>
 
   <script src=".\data\data1_salary_by_title_matched.js"></script>
   <script src=".\data\data2_salary_by_age_matched.js"></script>
-  <script src=".\data\data3_salary_by_age.js"></script>
+  <script src=".\data\data3_salary_by_age_scatter.js"></script>
+  <script src=".\data\data4_salary_by_education_matched.js"></script>
+  <script src=".\data\data5_salary_by_education_scatter.js"></script>
+  <script src=".\data\data_highschool.js"></script>
+  <script src=".\data\data_bachelors.js"></script>
+  <script src=".\data\data_masters.js"></script>
+  <script src=".\data\data_phd.js"></script>
+  <script src=".\data\data6_salary_by_experience_matched.js"></script>
+  <script src=".\data\data7_salary_by_experience_scatter.js"></script>
+  <script src=".\data\data8_jr_sr_data.js"></script>
   <script src=".\plots\data_plots.js"></script>
   <script src=".\dist\jquery.gifplayer.js"></script>
   <script>
