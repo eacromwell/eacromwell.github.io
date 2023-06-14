@@ -60,7 +60,7 @@ async function updatePlot(selectedDataset) {
         y: 1.05,
         orientation: 'h',
       },
-      title: "<span style='font-size: 20px'><b>Salaries by Job Title (Male and Female)</b></span>",
+      title: "<span style='font-size: 20px'><b>Salaries by Job Title</b></span>",
       yaxis: {
         dtick: 20000,
         tickformat: '$,.0f'
@@ -228,11 +228,11 @@ async function updatePlot(selectedDataset) {
       width: 1100,
       showlegend: true,
       legend: {
-        x: 0.30,
+        x: 0.34,
         y: 1.05,
         orientation: 'h'
       },
-      title: selectedDataset === "data2a" ? "<span style='font-size: 20px'><b>Salaries by Age - Line Graph (Male, Female and Overall)</b></span>" : "<span style='font-size: 20px'><b>Salaries by Age - Scatter Plot (Male, Female and Overall)</b></span>" ,
+      title: selectedDataset === "data2a" ? "<span style='font-size: 20px'><b>Salaries by Age - Line Graph</b></span>" : "<span style='font-size: 20px'><b>Salaries by Age - Scatter Plot</b></span>" ,
       yaxis: {
         tickformat: '$,.0f',
         dtick: 20000,
@@ -400,7 +400,7 @@ async function updatePlot(selectedDataset) {
       width: 1100,
       showlegend: true,
       legend: {
-        x: 0.38,
+        x: 0.35,
         y: 1.05,
         orientation: 'h'
       },
@@ -581,7 +581,7 @@ updatePlot("data3a");
           y: 1.05,
           orientation: 'h'
         },
-        title: selectedDataset === "data4a" ? "<span style='font-size: 20px'><b>Salary by Years of Experience - Bar Chart (Male, Female and Overall)</b></span>" : "<span style='font-size: 20px'><b>Salary by Years of Experience - Scatter Chart (Male, Female and Overall)</b></span>" ,
+        title: selectedDataset === "data4a" ? "<span style='font-size: 20px'><b>Salary by Years of Experience - Bar Chart</b></span>" : "<span style='font-size: 20px'><b>Salary by Years of Experience - Scatter Chart</b></span>" ,
         yaxis: {
           tickformat: '$,.0f', // Set tickformat to "$" for dollar sign
           range: [1000, 240000],
@@ -699,11 +699,11 @@ updatePlot("data3a");
           width: 1100,
           showlegend: true,
           legend: {
-            x: 0.35,
+            x: 0.32,
             y: 1.05,
             orientation: 'h'
           },
-          title: selectedDataset === "data5a" ? "<span style='font-size: 20px'><b>Salary Increase Amount for Junior to Senior Roles (Male, Female and Overall)</b></span>" : "<span style='font-size: 20px'><b>Salary Increase Percentage for Junior to Senior Roles (Male, Female and Overall)</b></span>" ,
+          title: selectedDataset === "data5a" ? "<span style='font-size: 20px'><b>Salary Increase Amount for Junior to Senior Roles</b></span>" : "<span style='font-size: 20px'><b>Salary Increase Percentage for Junior to Senior Roles</b></span>" ,
           yaxis: {
             tickformat: selectedDataset === "data5a" ? '$,.0f' : '.2%', // Set tickformat based on the selected dataset
           },
@@ -739,11 +739,3 @@ updatePlot("data3a");
     updatePlot("data5b");
     
     })();
-  // //
-  // marker: {
-  //   color: dataset.map((row) => row.C),
-  //   colorscale: [
-  //   ['0.0', 'c3f6c3'],
-  //   ['1.0', '90ee90'],
-  //   ],
-  // },
