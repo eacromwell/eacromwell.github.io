@@ -1,6 +1,6 @@
 # Group 3 - Project 3
 
-# Salary Analysis
+# Salary Analysis - View at eacromwell.github.io/index.html
 ## Project 3
 ### Project Summary:
 As we begin to consider roles in data analytics, we decided to research some of the factors contributing to salary disparities. Our research investigates the relationship between salary and key variables,  age, education level, years of experience, gender, and job title. 
